@@ -12,12 +12,23 @@ body {
   font-size: 16px;
 }
 
+header {
+  background-color: var(--darkblue);
+}
+
+h1,
+.lead {
+  color: var(--light);
+}
+
 .swim-lanes {
   min-height: 60vh;
 }
 
 .task-card {
   margin: 0 auto;
+  margin-bottom: 10px;
+  border: 1px solid var(--darkblue);
 }
 
 .task-card:hover {
@@ -25,19 +36,22 @@ body {
 }
 
 .header,
-.modal-header {
+.modal-header,
+.card-header {
   background-color: var(--darkblue);
   color: var(--light);
+  font-weight: 700;
 }
 
-.card-header {
+.lane-header {
   color: var(--darkblue);
+  font-weight: 700;
 }
 
-.project-late {
+.task-late {
   background-color: var(--lightred);
 }
 
-.project-today {
+.task-today {
   background-color: var(--lightyellow);
 }
